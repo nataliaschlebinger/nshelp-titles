@@ -1,5 +1,7 @@
-let titleh1s = document.body.querySelectorAll(".nshelp_title");
+let titleh1s = document.body.querySelectorAll(".nshelp_title")[0];
 
-if(titleh1s) {
-    document.getElementsByTagName('title')[0].innerText = titleh1s[0].innerText + ' - Netsuite Help Center';
+let pgtitle = document.getElementsByTagName('title')[0];
+
+if(titleh1s && pgtitle) {
+    pgtitle.innerText = titleh1s.innerText + ' - Netsuite Help Center';
 }
