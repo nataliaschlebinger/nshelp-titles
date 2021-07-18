@@ -13,8 +13,18 @@
             ]
         }
     ],
-    "icons":{
-        "48" : "/images/myicon.png",
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "/images/myfavicon.png"
+            ],
+            "matches": [
+                "https://*.app.netsuite.com/*"
+              ]
+        }
+    ],
+    "icons": {
+        "48": "/images/myicon.png",
         "128": "/images/myicon.png"
     }
 }
