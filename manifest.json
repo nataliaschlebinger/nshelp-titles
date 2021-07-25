@@ -1,7 +1,7 @@
 {
     "name": "NetSuite Help Center Actual Page Title",
-    "description": "Puts the actual title of an opened article in the page title. Now we can hover the mouse cursor over (our many) opened tabs like we should.",
-    "version": "1.0",
+    "description": "An extremely lightweight extension that puts the title of whatever you are looking at in the actual tab title (including search queries), and changes the tab icon, in the NetSuite Help Center.",
+    "version": "1.0.0",
     "manifest_version": 3,
     "content_scripts": [
         {
