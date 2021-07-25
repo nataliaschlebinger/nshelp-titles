@@ -1,6 +1,6 @@
 {
     "name": "NetSuite Help Center Actual Page Title",
-    "description": "An extremely lightweight extension that puts the title of whatever you are looking at in the actual tab title (including search queries), and changes the tab icon, in the NetSuite Help Center.",
+    "description": "Puts the title of what you have opened in the actual tab title, and changes the tab icon, in the NS Help Center.",
     "version": "1.0.0",
     "manifest_version": 3,
     "content_scripts": [
