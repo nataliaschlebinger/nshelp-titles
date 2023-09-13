@@ -5,7 +5,7 @@ const searchInput = document.getElementById("searchfld");
 if (titleh1s) {
     document.title = titleh1s.innerText + ' - Netsuite Help Center';
 }
-else if(window.location.search.includes('search')) {
+else if (window.location.search.includes('search')) {
     document.title = makeSearchTitle(searchInput);
 }
 
@@ -13,12 +13,11 @@ searchInput.addEventListener("keypress", function (e) {
     if (e.key == "Enter")
         document.title = makeSearchTitle(this)
 });
-searchInput.addEventListener("click", function(e){
+searchInput.addEventListener("click", function (e) {
     let offsetx = e.offsetX || (e.pageX - e.target.offsetLeft);
     let searchInputWidth = this.offsetWidth;
-    // 32 = SEARCH_ICON_WIDTH
-    if(offsetx + 32 > searchInputWidth)
-    {
+    const SEARCH_ICON_WIDTH = 32;
+    if (offsetx + SEARCH_ICON_WIDTH > searchInputWidth) {
         document.title = makeSearchTitle(this);
     }
 });
@@ -30,6 +29,6 @@ mylinktag.href = chrome.runtime.getURL('/images/myfavicon.png');
 mylinktag.type = 'image/png';
 head.appendChild(mylinktag);
 
-function makeSearchTitle (inputObj) {
+function makeSearchTitle(inputObj) {
     return 'Searched: ' + String(inputObj.value).trim() + ' - Nesuite Help Center';
 }
